@@ -1,0 +1,22 @@
+﻿<Window x:Class="GoodBD.Cheques"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GoodBD"
+        mc:Ignorable="d"
+        Title="Cheques" Height="450" Width="800">
+    <Grid Background="CadetBlue">
+        <DataGrid Margin="9,179,9.6,7" x:Name="DG" CanUserDeleteRows="False" CanUserAddRows="False" CanUserResizeRows="False" CanUserReorderColumns="False" CanUserResizeColumns="False" IsReadOnly="True" />
+        <Button Content="Выход" HorizontalAlignment="Left" Height="30" Margin="704,21,0,0" VerticalAlignment="Top" Width="80" Click="Button_Click" />
+        <Button Content="Добавить" HorizontalAlignment="Left" Height="26" Margin="14,140,0,0" VerticalAlignment="Top" Width="97" Click="Button_Click_1" />
+        <ComboBox x:Name="UCB" HorizontalAlignment="Left" Margin="13,86,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="10,67,0,0" TextWrapping="Wrap" Text="Покупатель" VerticalAlignment="Top" Width="66"/>
+        <ComboBox x:Name="HCB" HorizontalAlignment="Left" Margin="143,90,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="144,71,0,0" TextWrapping="Wrap" Text="Толстовка" VerticalAlignment="Top" Width="66"/>
+        <ComboBox x:Name="SCB" HorizontalAlignment="Left" Margin="275,91,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="276,72,0,0" TextWrapping="Wrap" Text="Кросовки" VerticalAlignment="Top" Width="66"/>
+        <DatePicker SelectedDateChanged="cam24_SelectedDateChanged" x:Name="Date" Margin="412,87,250.6,303" Height="30" />
+
+    </Grid>
+</Window>
